@@ -22,5 +22,7 @@ services:
       - nginx
   app:
     build: ./spring
+    environment:
+      TZ: "Asia/Seoul"
     ports:
       - "8080:8080"
